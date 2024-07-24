@@ -19,6 +19,8 @@ body{
     background-image: url(OG.jpg);
     background-size: cover;
     background-position: center;
+    /* To Represent the parallax effect in main background */
+    background-attachment: fixed;
 }
 
 .logo{
@@ -32,6 +34,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 nav ul li{
