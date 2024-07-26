@@ -20,7 +20,7 @@ body{
     background-size: cover;
     background-position: center;
     /* To Represent the parallax effect in main background */
-/*     background-attachment: fixed; */
+    background-attachment: fixed;
 }
 
 .logo{
