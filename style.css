@@ -20,7 +20,7 @@ body{
     background-size: cover;
     background-position: center;
     /* To Represent the parallax effect in main background */
-/*     background-attachment: fixed; */
+    background-attachment: fixed;
 }
 
 .logo{
@@ -399,6 +399,7 @@ nav .fa-solid{
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(phone_background.jpg);
+        background-attachment: scroll;
     }
     .header-text{
         margin-top: 9%;
