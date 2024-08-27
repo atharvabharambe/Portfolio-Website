@@ -399,7 +399,7 @@ nav .fa-solid{
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(phone_background.jpg);
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
     .header-text{
         margin-top: 9%;
