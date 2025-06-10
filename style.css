@@ -16,7 +16,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(OG.jpg);
+    background-image: url(images/OG.jpg);
     background-size: cover;
     background-position: center;
     /* To Represent the parallax effect in main background */
@@ -398,7 +398,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(phone_background.jpg);
+        background-image: url(images/phone_background.jpg);
         background-attachment: scroll;
     }
     .header-text{
