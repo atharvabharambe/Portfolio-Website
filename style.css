@@ -468,3 +468,46 @@ nav .fa-solid{
     margin-top: -35px;
     display: block;
 }
+/* 
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+} */
+
+/* .work {
+  flex: 1 1 calc(33% - 20px);
+  background: #222;
+  padding: 20px;
+  color: white;
+  text-align: center;
+} */
+
+#toggle-btn {
+   display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    background-color: #080808;
+    font-size: 16px
+}
+
+#toggle-btn:hover{
+    background: #ff004f;
+}
+
+#more-projects {
+    display: none;
+    
+}
+
+.hidden-project {
+  display: none;
+}
+
+

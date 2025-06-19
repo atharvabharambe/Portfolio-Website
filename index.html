@@ -123,19 +123,18 @@
 </div>
 
 
-<!-- ----------------- Projects ---------------------- -->
+<!-- ----------------- Projects ------------------------>
 
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
+        <div class="work-list" id="work-list">
+            <!-- First 3 Projects (Always visible) -->
             <div class="work">
                 <img src="images/work-1.png" alt="">
                 <div class="layer">
                     <h3>Social Media App</h3>
-                    <p>The app connects you to the talented people around the world.
-                        Download it from Play Store.
-                    </p>
+                    <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -143,9 +142,7 @@
                 <img src="images/work-2.png" alt="">
                 <div class="layer">
                     <h3>Music App</h3>
-                    <p>The app connects you to the talented people around the world.
-                        Download it from Play Store.
-                    </p>
+                    <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -153,16 +150,66 @@
                 <img src="images/work-3.png" alt="">
                 <div class="layer">
                     <h3>Online Shopping App</h3>
-                    <p>The app connects you to the talented people around the world.
-                        Download it from Play Store.
-                    </p>
+                    <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
+                    <a href="https://anon-shoponline.netlify.app/#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Last 6 Projects (Initially hidden) -->
+            <div class="work hidden-project">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-project">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-project">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
+                    <a href="https://anon-shoponline.netlify.app/#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-project">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-project">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden-project">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from Play Store.</p>
                     <a href="https://anon-shoponline.netlify.app/#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See More</a>
+
+    <button id="toggle-btn" onclick="toggleProjects()">See More</button>
     </div>
 </div>
+
 
 <!-- ------------------------------- Contact ------------------------------- -->
 
@@ -262,6 +309,28 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+    
+  function toggleProjects() {
+    const hiddenProjects = document.querySelectorAll(".hidden-project");
+    const toggleBtn = document.getElementById("toggle-btn");
+    const isHidden = hiddenProjects[0].style.display === "none";
+
+    hiddenProjects.forEach(project => {
+      project.style.display = isHidden ? "block" : "none";
+    });
+
+    toggleBtn.textContent = isHidden ? "See Less" : "See More";
+  }
+
+  // Initialize hidden on page load
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".hidden-project").forEach(project => {
+      project.style.display = "none";
+    });
+  });
+
+
   </script>
 
 
